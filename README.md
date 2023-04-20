@@ -3,8 +3,7 @@ Zoom replacement with spatial audio and generated avatars
 
 Zoom with spatial audio 🔊 and generated video stream: a virtual meetings app for mobile 📱 and desktop 💻 that generates a video stream of "conference table" environment with photorealistic avatars 👥 of participants, with localized spatial audio 👥. 
 
-Best part? You can turn off your video 📹 - your coworkers still will see your generated avatar! 
-
+Turn off your video camera and remain visible as a generated avatar
 
 
 
@@ -19,6 +18,12 @@ This avatar is visible to other participants in the meeting, ensuring that every
 
 With this advanced virtual meeting app, you can collaborate with coworkers from anywhere in the world, all while feeling like you're in the same room. Whether you're having a quick catch-up or a longer team meeting, this app is designed to make remote collaboration more efficient, productive, and enjoyable.
 
+
+
+
+To implement this solution, we will use WebRTC for voice-only communication and screensharing. We will leverage SwiftUI to create the user interface for the virtual meeting app.
+
+For generating the static "conference table" view, we will use on-device StableDiffusion. We will use Control-Net for selective low-resolution generation of the face features update in real-time.
 
 
 
